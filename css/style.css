@@ -6,8 +6,8 @@
     --grey: #F8F8F8; 
     --white-grey: #FBFBFB;
     --white-black-color: #222224;
-
 }
+
 body {
     font-family: Lato;
     font-size: 14px;
@@ -16,7 +16,7 @@ body {
     line-height: 17px;
 }
 
-.container{
+.container {
     width: 1140px;
     margin: 0 auto;
 }
@@ -32,10 +32,10 @@ body {
     clip: rect(0 0 0 0)
   }
 
-.header{
+.header {
     background: var(--black-color);
-    
 }
+
 .header__navigation {
     display: none;
 }
@@ -46,9 +46,11 @@ body {
     align-items: center;
     min-height: 75px;
 }
-.header__logo{
+
+.header__logo {
     margin: 0 41px 0 0;
 }
+
 .header__button {
     background: transparent;
     border: none;
@@ -58,12 +60,14 @@ body {
 .header__link {
     margin: 0 34px 0 0;
 }
-.brand{
+
+.brand {
     max-width: 1600px;
     display: flex;
     margin: 0 auto;
 }
-.brand__title-container{
+
+.brand__title-container {
     display: flex;
     flex-grow: 1;
     background: var(--light-pink-color);
@@ -71,11 +75,11 @@ body {
     align-items: center;
 }
 
-.brand__title{  
-font-size: 48px;
-font-weight: 900;
-line-height: 58px;
-text-transform: uppercase;
+.brand__title {  
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
 }
 
 .brand__sub-title {
@@ -88,12 +92,14 @@ text-transform: uppercase;
 .brand__pink-sub-title {
     color: var(--pink);
 }
+
 .promotion__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 63px 0 0 0 ;
 }
+
 .promotion__item {
     width: 360px;
     min-height: 260px;
@@ -102,32 +108,36 @@ text-transform: uppercase;
     align-items: center;
     flex-direction: column;
     margin: 0 0 30px 0;
-    
 }
+
 .promotion__item--woman {
     background-image: url(../img/stock-women.png);
     background-size: cover;
 }
+
 .promotion__item--men {
     background-image: url(../img/stock-men.png);
     background-size: cover;
 }
+
 .promotion__item--kids {
     background-image: url(../img/stock-kids.png);
     background-size: cover;
 }
+
 .promotion__item--accesories {
     background-image: url(../img/stock-accesorles.png);
     background-size: cover;
     width: 100%;
 }
+
 .promotion__title {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     color: var(--white);
     text-transform: uppercase;
-    }
+}
 
 .promotion__text {
     font-size: 24px;
@@ -136,10 +146,12 @@ text-transform: uppercase;
     color: var(--pink);
     text-transform: uppercase;
 }
+
 .products {
     display: flex;
     flex-direction: column;
 }
+
 .products__title {
     font-size: 30px;
     font-weight: 400;
@@ -185,10 +197,10 @@ text-transform: uppercase;
 }
 
 .product__text {
-margin: 13px 0 0 0;
+    margin: 13px 0 0 0;
 }
 
-.product__price{
+.product__price {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -199,8 +211,8 @@ margin: 13px 0 0 0;
 .product__button {
     display: none;
 }
-.products__button {
 
+.products__button {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -223,12 +235,14 @@ margin: 13px 0 0 0;
     display: flex;
     justify-content: space-between;
 }
-.privilege__item{
+
+.privilege__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: center;
 }
+
 .privilege__title {
     font-size: 20px;
     font-weight: 400;
@@ -236,34 +250,38 @@ margin: 13px 0 0 0;
     color: var(--white-grey);
     margin: 28px 0 0;
 }
+
 .privilege__text {
-color: var(--white-grey);
-font-size: 14px;
-font-weight: 300;
-line-height: 17px;
-text-align: center;
-margin: 16px 0 0;
+    color: var(--white-grey);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+    margin: 16px 0 0;
 }
 
-.footer{
+.footer {
     max-width: 1600px;
     background: url(../img/footer-bgr.jpg);
     background-size: cover;
     background-position: center center;
     margin: 0 auto;
 }
-.footer__top{
+
+.footer__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 448px;
 }
+
 .footer__top-comment {
     
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .footer__top-text {
     font-size: 20px;
     font-style: italic;
@@ -283,8 +301,8 @@ margin: 16px 0 0;
     color: var(--white-black-color);
     display: block;
     text-transform: uppercase;
-   
 }
+
 .footer__top-title {
     font-size: 18px;
     font-weight: 400;
@@ -293,28 +311,30 @@ margin: 16px 0 0;
     flex-grow: 0.5;
     text-transform: uppercase;
 }
-.footer__botton{
+
+.footer__botton {
     background: var(--white-black-color);
     max-width: 1600px;
 }
-.footer__botton-container{
+
+.footer__botton-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 79px;
 }
 
-
-.footer__botton-text{
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-color: var(--white-grey);
+.footer__botton-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--white-grey);
 }
 
-.footer__botton-list{
+.footer__botton-list {
     display: flex;
 }
-.footer__botton-item{
+
+.footer__botton-item {
     margin: 0 0 0 27px;
 }
