@@ -50,9 +50,36 @@
     align-items: center;
     min-height: 75px;
   }
-  
+
+  .header__search {
+    display: flex;
+  }
+
+  [type="search"] {
+      padding: 26px 20px;
+      border: none;
+      outline: 1px solid var(--pink);
+      position: relative;
+  }
+
+  [type="search"]:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/search.png);
+    left: -39px;
+    top: -3px;
+  }
+
   .header__logo {
     margin: 0 41px 0 0;
+  }
+
+  [type="search"] {
+    padding: 10px 20px;
+    border: none;
+    outline: 1px solid black;
   }
   
   .header__button {
@@ -60,9 +87,27 @@
     border: none;
     margin: 0 34px 0 0;
   }
+
+  .header__button:hover .header__icon,
+  .header__button:focus .header__icon {
+    fill: var(--pink);
+  }
   
   .header__link {
     margin: 0 34px 0 0;
+  }
+
+  .header__link:hover .header__icon,
+  .header__link:focus .header__icon {
+    fill: var(--pink);
+  }
+
+  .header__icon {
+    fill: var(--grey);
+  }
+
+  .header__icon:hover {
+    fill: var(--pink);
   }
   
   .brand {
@@ -352,6 +397,10 @@
     margin: 0 0 0 27px;
   }
 
+  .footer__icon{
+    fill: var(--white);
+  }
+
   .top {
     margin: 0 auto 63px;
     min-height: 148px;
@@ -384,6 +433,41 @@
     border: 1px solid #A4A4A4;
     margin: 24px 0 0;
     padding: 14px 278px 16px 18px;
+  }
+
+  [type="radio"] {
+    display: none;
+  }
+
+  [type="radio"]:checked+.registration__label:after {
+    display: block;
+  }
+
+  .registration__label {
+    position: relative;
+    margin: 33px 54px 0 27px;
+  }
+
+  .registration__label:before {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border: 1px solid var(--dark-grey-color);
+    border-radius: 50px;
+    left: -27px;
+  }
+
+  .registration__label:after {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: var(--pink);
+    border-radius: 50px;
+    left: -24px;
+    top: 3px;
+    display: none;
   }
 
   .registration__gender {
