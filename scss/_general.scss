@@ -1,9 +1,7 @@
 body {
+    @include font(14px, 17px, 300);
     font-family: Lato;
-    font-size: 14px;
     font-style: normal;
-    font-weight: 300;
-    line-height: 17px;
   }
   
   .container {
@@ -21,3 +19,4 @@ body {
     border: 0;
     clip: rect(0 0 0 0)
   }
+  

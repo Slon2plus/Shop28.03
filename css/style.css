@@ -52,11 +52,11 @@ table {
 }
 
 body {
-  font-family: Lato;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 300;
   line-height: 17px;
+  font-weight: 300;
+  font-family: Lato;
+  font-style: normal;
 }
 
 .container {
@@ -165,15 +165,15 @@ body {
 
 .brand__title {
   font-size: 48px;
-  font-weight: 900;
   line-height: 58px;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
 .brand__sub-title {
   font-size: 32px;
-  font-weight: 700;
   line-height: 38px;
+  font-weight: 700;
   display: block;
 }
 
@@ -221,16 +221,16 @@ body {
 
 .promotion__title {
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 
 .promotion__text {
   font-size: 24px;
-  font-weight: 700;
   line-height: 29px;
+  font-weight: 900;
   color: #F16D7F;
   text-transform: uppercase;
 }
@@ -256,8 +256,8 @@ body {
 
 .privilege__title {
   font-size: 20px;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
   color: #FBFBFB;
   margin: 28px 0 0;
 }
@@ -265,8 +265,8 @@ body {
 .privilege__text {
   color: #FBFBFB;
   font-size: 14px;
-  font-weight: 300;
   line-height: 17px;
+  font-weight: 300;
   text-align: center;
   margin: 16px 0 0;
 }
@@ -278,16 +278,16 @@ body {
 
 .products__title {
   font-size: 30px;
-  font-weight: 400;
   line-height: 36px;
+  font-weight: 400;
   margin: 97px 0 6px 0;
   align-self: center;
 }
 
 .products__text {
   font-size: 14px;
-  font-weight: 400;
   line-height: 17px;
+  font-weight: 400;
   align-self: center;
 }
 
@@ -303,43 +303,43 @@ body {
   margin: 0 0 30px;
 }
 
-.products .product__img {
+.products__img {
   display: block;
 }
 
-.products .product_description {
+.products_description {
   background: #F8F8F8;
   padding: 25px 29px 20px 17px;
 }
 
-.products .product__title {
+.products__title {
   font-size: 13px;
-  font-weight: 400;
   line-height: 16px;
+  font-weight: 400;
   text-transform: uppercase;
   margin: 48px 0 0 0;
 }
 
-.products .product__text {
+.products__text {
   margin: 13px 0 0 0;
 }
 
-.products .product__price {
+.products__price {
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
   margin: 18px 0 0 0;
   color: #F16D7F;
 }
 
-.products .product__button {
+.products__button {
   position: relative;
 }
 
 .products__button {
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
   border: 1px solid #F16D7F;
   margin: 18px 0 96px;
   padding: 15px 40px;
@@ -376,9 +376,9 @@ body {
 
 .footer__text {
   font-size: 20px;
-  font-style: italic;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
   text-align: center;
   color: #222224;
   width: 360px;
@@ -387,8 +387,8 @@ body {
 
 .footer__subtitle {
   font-size: 24px;
-  font-weight: 700;
   line-height: 38px;
+  font-weight: 700;
   text-align: center;
   color: #222224;
   display: block;
@@ -397,8 +397,8 @@ body {
 
 .footer__title {
   font-size: 18px;
-  font-weight: 400;
   line-height: 30px;
+  font-weight: 400;
   text-align: center;
   flex-grow: 0.5;
   text-transform: uppercase;
@@ -418,8 +418,8 @@ body {
 
 .footer__contacts-text {
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
   color: #FBFBFB;
 }
 
@@ -428,10 +428,29 @@ body {
 }
 
 .footer__item {
+  width: 42px;
+  height: 42px;
+  background: #FFFFFF;
   margin: 0 0 0 27px;
 }
 
 .footer__icon {
-  fill: #FFFFFF;
+  fill: aqua;
+}
+
+.top {
+  margin: 0 auto 63px;
+  min-height: 148px;
+  background: #F8F3F4;
+  display: flex;
+}
+
+.top__title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #F16D7F;
+  text-transform: uppercase;
+  align-self: center;
 }
 /*# sourceMappingURL=style.css.map */
