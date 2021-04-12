@@ -453,4 +453,137 @@ body {
   text-transform: uppercase;
   align-self: center;
 }
+
+.registration {
+  display: flex;
+  justify-content: space-between;
+}
+
+.registration__legend {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  color: #222222;
+}
+
+.registration__input {
+  border: 1px solid #F8F8F8;
+  margin: 24px 0 0;
+  padding: 14px 278px 16px 18px;
+}
+
+.registration [type="radio"] {
+  display: none;
+}
+
+.registration [type="radio"]:checked + .registration__label:after {
+  display: block;
+}
+
+.registration__label {
+  position: relative;
+  margin: 33px 54px 0 27px;
+}
+
+.registration__label:before {
+  content: '';
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #B1B1B1;
+  border-radius: 50px;
+  left: -27px;
+}
+
+.registration__label:after {
+  content: '';
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background: #F16D7F;
+  border-radius: 50px;
+  left: -24px;
+  top: 3px;
+  display: none;
+}
+
+.registration__gender {
+  margin: 33px 0 33px;
+}
+
+.registration__input::placeholder {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #B1B1B1;
+}
+
+.registration-subtext {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #B1B1B1;
+  margin: 15px 0 0;
+}
+
+.registration__button {
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  border: none;
+  padding: 16px 66px 16px 29px;
+  margin: 39px 0 113px;
+  position: relative;
+  display: block;
+}
+
+.registration__button:before {
+  content: '';
+  background: url(../img/arrow.png);
+  position: absolute;
+  width: 17px;
+  height: 10px;
+  right: 20px;
+  top: 40%;
+}
+
+.registration__title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.registration__text {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  max-width: 652px;
+  margin: 22px 0 0;
+}
+
+.registration__list {
+  margin: 21px 0 0;
+}
+
+.registration__item {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  margin: 0 0 16px 36px;
+  position: relative;
+}
+
+.registration__item:before {
+  content: '';
+  background: url(../img/element.svg);
+  height: 16px;
+  width: 20px;
+  position: absolute;
+  left: -33px;
+  top: 25%;
+}
 /*# sourceMappingURL=style.css.map */
