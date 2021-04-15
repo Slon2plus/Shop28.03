@@ -118,7 +118,7 @@ body {
 .header [type="search"] {
   padding: 10px 20px;
   border: none;
-  outline: 1px solid black;
+  outline: 1px solid #222222;
 }
 
 .header__button {
@@ -428,14 +428,23 @@ body {
 }
 
 .footer__item {
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
   background: #FFFFFF;
   margin: 0 0 0 27px;
 }
 
+.footer__item :hover,
+.footer__item :focus {
+  background: #F16D7F;
+}
+
 .footer__icon {
-  fill: aqua;
+  fill: #222222;
+}
+
+.footer__icon:hover, .footer__icon:focus {
+  fill: #FFFFFF;
 }
 
 .top {
