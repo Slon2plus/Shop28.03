@@ -14,6 +14,16 @@
     &__title {
       @include font(48px, 58px, 900);
       text-transform: uppercase;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        background: url(../img/stick.jpg);
+        height: 92px;
+        width: 12px;
+        left: -22px;
+        top: 3px;
+      }
     }
   
     &__sub-title {

@@ -1,73 +1,52 @@
 .products {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @include font(30px, 36px, 400);
+    margin: 97px 0 6px 0;
+    align-self: center;
+  }
+
+  &__text {
+    @include font(14px, 17px, 400);
+    align-self: center;
+  }
+
+  &__list {
     display: flex;
-    flex-direction: column;
-  
-    &__title {
-      @include font(30px, 36px, 400);
-      margin: 97px 0 6px 0;
-      align-self: center;
-    }
-  
-    &__text {
-      @include font(14px, 17px, 400);
-      align-self: center;
-    }
-  
-    &__list {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin: 48px 0 0;
-    }
-  
-    &__item {
-      width: 360px;
-      margin: 0 0 30px;
-    }
-  
-    &__img {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 48px 0 0;
+  }
+
+  &__item {
+    width: 360px;
+    margin: 0 0 30px;
+
+    &:hover .product__overlay:before,
+    &:hover .product__button {
       display: block;
     }
-  
-    &_description {
-      background: $grey;
-      padding: 25px 29px 20px 17px;
-    }
-  
-    &__title {
-      @include font(13px, 16px, 400);
-      text-transform: uppercase;
-      margin: 48px 0 0 0;
-    }
-  
-    &__text {
-      margin: 13px 0 0 0;
-    }
-  
-    &__price {
-      @include font(16px, 19px, 400);
-      margin: 18px 0 0 0;
-      color: $pink;
-    }
-  
-    &__button {
-      position: relative;
-    }
-  
-    &__button {
-      @include font(16px, 19px, 400);
-      border: 1px solid $pink;
-      margin: 18px 0 96px;
-      padding: 15px 40px;
-      color: $pink;
-      align-self: center;
-      background: $white;
-  
-      &:hover,
-      &:focus {
-        color: $white;
-        background: $pink;
-      }
+  }
+
+  &__button {
+    position: relative;
+  }
+
+  &__button {
+    @include font(16px, 19px, 400);
+    border: 1px solid $pink;
+    margin: 18px 0 96px;
+    padding: 15px 40px;
+    color: $pink;
+    align-self: center;
+    background: $white;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background: $pink;
     }
   }
-  
+}
