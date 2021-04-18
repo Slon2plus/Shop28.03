@@ -153,7 +153,7 @@ body {
 .header__navigation {
   content: '';
   position: absolute;
-  display: block;
+  display: none;
   min-height: 764px;
   width: 232px;
   background: #FFFFFF;
@@ -185,7 +185,8 @@ body {
   font-weight: 400;
   color: #B1B1B1;
   text-decoration: none;
-  margin: 12px 0 0 55px;
+  display: block;
+  margin: 12px 0 0 53px;
 }
 
 .brand {

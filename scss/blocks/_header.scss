@@ -75,7 +75,7 @@
   &__navigation {
     content: '';
     position: absolute;
-    display: block;
+    display: none;
     min-height: 764px;
     width: 232px;
     background: $white;
@@ -101,6 +101,7 @@
     @include font (14px, 17px, 400);
     color: $dark-grey-color;
     text-decoration: none;
-    margin: 12px 0 0 55px;
+    display: block;
+    margin: 12px 0 0 53px;
   }
 }
