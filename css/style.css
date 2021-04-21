@@ -431,6 +431,34 @@ body {
   text-transform: uppercase;
 }
 
+.footer__form {
+  display: flex;
+  margin: 32px 0 0;
+}
+
+.footer__input {
+  padding: 18px 60px 18px 22px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #222222;
+  border: none;
+  background: #E1E1E1;
+  border-radius: 50px 0 0 50px;
+}
+
+.footer__button {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #FFFFFF;
+  background: #F16D7F;
+  padding: 18px;
+  border-radius: 0 50px 50px 0;
+  border: none;
+}
+
 .footer__contacts {
   background: #222224;
   max-width: 1600px;
