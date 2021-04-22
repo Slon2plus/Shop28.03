@@ -82,6 +82,7 @@
             <h1 class="top__title container">registration</h1>
         </section>
         <section class="registration container">
+            <h2></h2>
             <div>
                 <form action="#" method="POST">
                     <fieldset>
@@ -91,8 +92,10 @@
                         <div class="registration__gender">
                             <input type="radio" name="gender" value="male" id="male">
                             <label class="registration__label" for="male">Male</label>
-                            <input type="radio" name="gender" value="Female" id="Female">
+                            <input type="radio" name="gender" value="female" id="Female">
                             <label class="registration__label" for="Female">Female</label>
+                            <input type="radio" name="gender" value="other" id="other">
+                            <label class="registration__label registration__other" for="other">Other</label>
                         </div>
                     </fieldset>
                     <fieldset>
@@ -105,9 +108,9 @@
                     <button class="registration__button" type="submit">join now</button>
                 </form>
             </div>
-            <div>
+            <div class="registration__wrapper">
                 <h2 class="registration__title">loyalty has its perks</h2>
-                <p class="regisration__text">Get in on the loyalty program where you can earn points and unlock serious
+                <p class="registration__text">Get in on the loyalty program where you can earn points and unlock serious
                     perks. Starting with these as soon as you join:</p>
                 <ul class="registration__list">
                     <li class="registration__item">15% off welcome offer</li>

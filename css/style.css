@@ -767,6 +767,12 @@ body {
   display: flex;
 }
 
+@media (max-width: 1599px) {
+  .top {
+    margin: 0 auto 40px;
+  }
+}
+
 .top__title {
   font-size: 24px;
   line-height: 29px;
@@ -781,6 +787,13 @@ body {
   justify-content: space-between;
 }
 
+@media (max-width: 767px) {
+  .registration {
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+
 .registration__legend {
   font-size: 16px;
   line-height: 19px;
@@ -789,9 +802,15 @@ body {
 }
 
 .registration__input {
-  border: 1px solid #F8F8F8;
+  border: 1px solid #B1B1B1;
   margin: 24px 0 0;
-  padding: 14px 278px 16px 18px;
+  padding: 14px 270px 16px 18px;
+}
+
+@media (max-width: 767px) {
+  .registration__input {
+    padding: 12px 170px 16px 12px;
+  }
 }
 
 .registration [type="radio"] {
@@ -804,7 +823,8 @@ body {
 
 .registration__label {
   position: relative;
-  margin: 33px 54px 0 27px;
+  margin: 0px 54px 0 27px;
+  display: block;
 }
 
 .registration__label:before {
@@ -829,8 +849,19 @@ body {
   display: none;
 }
 
+.registration__other {
+  display: none;
+}
+
+@media (max-width: 1599px) {
+  .registration__other {
+    display: block;
+  }
+}
+
 .registration__gender {
   margin: 33px 0 33px;
+  display: flex;
 }
 
 .registration__input::placeholder {
@@ -846,6 +877,7 @@ body {
   font-weight: 300;
   color: #B1B1B1;
   margin: 15px 0 0;
+  max-width: 359px;
 }
 
 .registration__button {
@@ -862,6 +894,12 @@ body {
   display: block;
 }
 
+@media (max-width: 767px) {
+  .registration__button {
+    margin: 39px 0 40px;
+  }
+}
+
 .registration__button:before {
   content: '';
   background: url(../img/arrow.png);
@@ -872,11 +910,31 @@ body {
   top: 40%;
 }
 
+.registration__wrapper {
+  margin: 0 0 0 128px;
+}
+
+@media (max-width: 1599px) {
+  .registration__wrapper {
+    margin: 0 0 0 23px;
+  }
+}
+
 .registration__title {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
+  margin: 22px 0 0;
   text-transform: uppercase;
+  display: block;
+}
+
+@media (max-width: 1599px) {
+  .registration__title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+  }
 }
 
 .registration__text {
@@ -887,8 +945,23 @@ body {
   margin: 22px 0 0;
 }
 
+@media (max-width: 1599px) {
+  .registration__text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    max-width: 354px;
+  }
+}
+
 .registration__list {
   margin: 21px 0 0;
+}
+
+@media (max-width: 767px) {
+  .registration__list {
+    margin: 20px 0 100px;
+  }
 }
 
 .registration__item {
@@ -897,6 +970,14 @@ body {
   font-weight: 300;
   margin: 0 0 16px 36px;
   position: relative;
+}
+
+@media (max-width: 1599px) {
+  .registration__item {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+  }
 }
 
 .registration__item:before {

@@ -2,15 +2,24 @@
   display: flex;
   justify-content: space-between;
 
+  @include mobile {
+    flex-direction: column;
+    justify-content: start;
+  }
+
   &__legend {
     @include font(16px, 19px, 300);
     color: $black-color;
   }
 
   &__input {
-    border: 1px solid $grey;
+    border: 1px solid $dark-grey-color;
     margin: 24px 0 0;
-    padding: 14px 278px 16px 18px;
+    padding: 14px 270px 16px 18px;
+
+    @include mobile {
+      padding: 12px 170px 16px 12px;
+    }
   }
 
   [type="radio"] {
@@ -23,7 +32,8 @@
 
   &__label {
     position: relative;
-    margin: 33px 54px 0 27px;
+    margin: 0px 54px 0 27px;
+    display: block;
 
     &:before {
       content: '';
@@ -48,8 +58,17 @@
     }
   }
 
+  &__other {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
   &__gender {
     margin: 33px 0 33px;
+    display: flex;
   }
 
   &__input::placeholder {
@@ -61,6 +80,8 @@
     @include font(13px, 16px, 300);
     color: $dark-grey-color;
     margin: 15px 0 0;
+    max-width: 359px;
+
   }
 
   &__button {
@@ -74,6 +95,10 @@
     position: relative;
     display: block;
 
+    @include mobile {
+      margin: 39px 0 40px;
+    }
+
     &:before {
       content: '';
       background: url(../img/arrow.png);
@@ -85,25 +110,52 @@
     }
   }
 
+  &__wrapper {
+    margin: 0 0 0 128px;
+
+    @include tablet {
+      margin: 0 0 0 23px;
+    }
+  }
+
   &__title {
     @include font(24px, 29px, 300);
+    margin: 22px 0 0;
     text-transform: uppercase;
+    display: block;
+
+    @include tablet {
+      @include font(16px, 20px, 400);
+    }
   }
 
   &__text {
     @include font(24px, 29px, 300);
     max-width: 652px;
     margin: 22px 0 0;
+
+    @include tablet {
+      @include font(16px, 20px, 300);
+      max-width: 354px;
+    }
   }
 
   &__list {
     margin: 21px 0 0;
+
+    @include mobile {
+      margin: 20px 0 100px;
+    }
   }
 
   &__item {
     @include font(24px, 29px, 300);
     margin: 0 0 16px 36px;
     position: relative;
+
+    @include tablet {
+      @include font(16px, 20px, 300);
+    }
 
     &:before {
       content: '';

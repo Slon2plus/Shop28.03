@@ -4,6 +4,10 @@
   background: $white-pink-color;
   display: flex;
 
+  @include tablet {
+    margin: 0 auto 40px;
+  }
+
   &__title {
     @include font(24px, 29px, 400);
     color: $pink;
