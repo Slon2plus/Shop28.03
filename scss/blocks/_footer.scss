@@ -1,79 +1,151 @@
 .footer {
-    max-width: 1600px;
-    background: url(../img/footer-bgr.jpg);
-    background-size: cover;
-    background-position: center center;
-    margin: 0 auto;
-  
-    &__subscription {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 448px;
-    }
-  
-    &__comment {
-      display: flex;
+  max-width: $desktop-width;
+  background: url(../img/footer-bgr.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+
+  &__subscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 448px;
+
+    @include tablet {
       flex-direction: column;
-      align-items: center;
-    }
-  
-    &__text {
-      @include font(20px, 24px, 400);
-      font-style: italic;
-      text-align: center;
-      color: $white-black-color;
-      width: 360px;
-      margin: 32px 0 0;
-    }
-  
-    &__subtitle {
-      @include font(24px, 38px, 700);
-      text-align: center;
-      color: $white-black-color;
-      display: block;
-      text-transform: uppercase;
-  
-    }
-  
-    &__title {
-      @include font(18px, 30px, 400);
-      text-align: center;
-      flex-grow: 0.5;
-      text-transform: uppercase;
-    }
-  
-    &__contacts {
-      background: $white-black-color;
-      max-width: 1600px;
-    }
-  
-    &__wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 79px;
-    }
-  
-    &__contacts-text {
-      @include font(16px, 19px, 400);
-      color: $white-grey;
-    }
-  
-    &__list {
-      display: flex;
-    }
-  
-    &__item {
-        width: 42px;
-        height: 42px;
-      background: $white;
-      margin: 0 0 0 27px;
-    }
-  
-    &__icon {
-        fill: aqua;
-        
+      min-height: 693px;
+      justify-content: start;
     }
   }
-  
+
+  &__img {
+    @include mobile {
+      height: 143px;
+      width: 138px;
+    }
+  }
+
+  &__comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      margin: 54px 0 0;
+    }
+  }
+
+  &__text {
+    @include font(20px, 24px, 400);
+    font-style: italic;
+    text-align: center;
+    color: $white-black-color;
+    width: 360px;
+    margin: 32px 0 0;
+
+    @include tablet {
+      margin: 32px 0 64px;
+    }
+  }
+
+  &__subtitle {
+    @include font(24px, 38px, 700);
+    text-align: center;
+    color: $white-black-color;
+    display: block;
+    text-transform: uppercase;
+
+  }
+
+  &__title {
+    @include font(18px, 30px, 400);
+    text-align: center;
+    flex-grow: 0.5;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    display: flex;
+    margin: 32px 0 0;
+
+    @include tablet {
+      margin: 27px 0 0;
+    }
+  }
+
+  &__input {
+    padding: 18px 60px 18px 22px;
+    @include font (14px, 17px, 400);
+    color: $black-color;
+    border: none;
+    background: $color-grey;
+    border-radius: 50px 0 0 50px;
+  }
+
+  &__button {
+    display: block;
+    @include font (14px, 17px, 400);
+    color: $white;
+    background: $pink;
+    padding: 18px;
+    border-radius: 0 50px 50px 0;
+    border: none;
+  }
+
+  &__contacts {
+    background: $white-black-color;
+    max-width: $desktop-width;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 79px;
+
+    @include mobile {
+      min-height: 143px;
+      flex-direction: column-reverse;
+      justify-content: start;
+    }
+  }
+
+  &__contacts-text {
+    @include font(16px, 19px, 400);
+    color: $white-grey;
+
+    @include mobile {
+      margin: 40px 0 10px;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    width: 32px;
+    height: 32px;
+    background: $white;
+    margin: 0 0 0 27px;
+
+    @include mobile {
+      margin: 0 0 0 8px;
+    }
+
+    :hover,
+    :focus {
+      background: $pink;
+    }
+  }
+
+  &__icon {
+    fill: $black-color;
+
+    &:hover,
+    &:focus {
+      fill: $white;
+    }
+  }
+}

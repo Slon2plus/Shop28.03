@@ -1,32 +1,45 @@
 .privilege {
-    background: $black-color;
-    max-width: 1600px;
-    margin: 0 auto;
-  
-    &__list {
-      min-height: 341px;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    &__item {
-      display: flex;
+  background: $black-color;
+  max-width: $desktop-width;
+  margin: 0 auto;
+
+  &__list {
+    min-height: 341px;
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
       flex-direction: column;
-      align-items: center;
-      align-self: center;
-    }
-  
-    &__title {
-      @include font(20px, 24px, 400);
-      color: $white-grey;
-      margin: 28px 0 0;
-    }
-  
-    &__text {
-      color: $white-grey;
-      @include font(14px, 17px, 300);
-      text-align: center;
-      margin: 16px 0 0;
+      min-height: 610px;
+      justify-content: start;
     }
   }
-  
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+
+    @include tablet {
+      margin: 48px 0 0;
+    }
+  }
+
+  &__title {
+    @include font(20px, 24px, 400);
+    color: $white-grey;
+    margin: 28px 0 0;
+  }
+
+  &__text {
+    color: $white-grey;
+    @include font(14px, 17px, 300);
+    text-align: center;
+    margin: 16px 0 0;
+
+    @include tablet {
+      max-width: 360px;
+    }
+  }
+}

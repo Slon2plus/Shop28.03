@@ -1,74 +1,133 @@
 .header {
-    background: $black-color;
-  
-    &__navigation {
-      display: none;
-    }
-  
-    &__container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 75px;
-    }
-  
-    &__search {
-      display: flex;
-    }
-  
-    [type="search"] {
-      padding: 26px 20px;
-      border: none;
-      outline: 1px solid $pink;
-      position: relative;
-    }
-  
-    [type="search"]:before {
-      content: '';
-      position: absolute;
-      width: 26px;
-      height: 26px;
-      background-image: url(../img/search.png);
-      left: -39px;
-      top: -3px;
-    }
-  
-    &__logo {
-      margin: 0 41px 0 0;
-    }
-  
-    [type="search"] {
-      padding: 10px 20px;
-      border: none;
-      outline: 1px solid black;
-    }
-  
-    &__button {
-      background: transparent;
-      border: none;
-      margin: 0 34px 0 0;
-  
-      &:hover .header__icon,
-      &:focus .header__icon {
-        fill: $pink;
-      }
-    }
-  
-    &__link {
-      margin: 0 34px 0 0;
-  
-      &:hover .header__icon,
-      &:focus .header__icon {
-        fill: $pink;
-      }
-    }
-  
-    &__icon {
-      fill: $grey;
-  
-      &:hover {
-        fill: $pink;
-      }
+  background: $black-color;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+  }
+
+  &__search {
+    display: flex;
+  }
+
+  &__logo {
+    margin: 0 65px 0 0;
+    align-items: center;
+
+    @include tablet {
+      margin: 0 56px 0 16px;
     }
   }
-  
+
+  &__form {
+    position: relative;
+    align-items: center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 27px;
+      height: 26px;
+      background: url(../img/search.png);
+      left: -36px;
+      top: 2px;
+    }
+  }
+
+  [type="search"] {
+    padding: 10px 20px;
+    border: none;
+    outline: 1px solid $black-color;
+
+    @include tablet {
+      padding: 9px 10px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  [type="search"]:hover,
+  [type="search"]:focus {
+    outline: 1px solid $pink;
+    background: $white-pink-color;
+  }
+
+  &__button {
+    background: transparent;
+    border: none;
+    margin: 0 25px 0 0;
+
+    &:hover .header__icon,
+    &:focus .header__icon {
+      fill: $pink;
+    }
+  }
+
+  &__link {
+    margin: 0 34px 0 0;
+
+    @include mobile {
+      display: none;
+    }
+
+    &:hover .header__icon,
+    &:focus .header__icon {
+      fill: $pink;
+    }
+  }
+
+  &__icon {
+    fill: $grey;
+
+    &:hover {
+      fill: $pink;
+    }
+  }
+
+  &__basket {
+    @include tablet {
+      margin: 0 16px 0;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__navigation {
+    content: '';
+    position: absolute;
+    display: none;
+    min-height: 764px;
+    width: 232px;
+    background: $white;
+    right: 49px;
+    top: 51px;
+  }
+
+  &__title {
+    @include font(14px, 17px, 700);
+    color: $black-color;
+    margin: 37px 0 0 34px;
+    text-transform: uppercase;
+  }
+
+  &__sub-title {
+    @include font(14px, 16px, 400);
+    color: $pink;
+    margin: 24px 0 0 33px;
+    text-transform: uppercase;
+  }
+
+  &__sub-navigation-link {
+    @include font (14px, 17px, 400);
+    color: $dark-grey-color;
+    text-decoration: none;
+    display: block;
+    margin: 12px 0 0 53px;
+  }
+}
