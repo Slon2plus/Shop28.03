@@ -1,119 +1,118 @@
 .registration {
-    display: flex;
-    justify-content: space-between;
-  
-    &__legend {
-      @include font(16px, 19px, 300);
-      color: $black-color;
+  display: flex;
+  justify-content: space-between;
+
+  &__legend {
+    @include font(16px, 19px, 300);
+    color: $black-color;
+  }
+
+  &__input {
+    border: 1px solid $grey;
+    margin: 24px 0 0;
+    padding: 14px 278px 16px 18px;
+  }
+
+  [type="radio"] {
+    display: none;
+  }
+
+  [type="radio"]:checked+.registration__label:after {
+    display: block;
+  }
+
+  &__label {
+    position: relative;
+    margin: 33px 54px 0 27px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      border: 1px solid $dark-grey-color;
+      border-radius: 50px;
+      left: -27px;
     }
-  
-    &__input {
-      border: 1px solid $grey;
-      margin: 24px 0 0;
-      padding: 14px 278px 16px 18px;
-    }
-  
-    [type="radio"] {
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      background: $pink;
+      border-radius: 50px;
+      left: -24px;
+      top: 3px;
       display: none;
     }
-  
-    [type="radio"]:checked+.registration__label:after {
-      display: block;
-    }
-  
-    &__label {
-      position: relative;
-      margin: 33px 54px 0 27px;
-  
-      &:before {
-        content: '';
-        position: absolute;
-        width: 17px;
-        height: 17px;
-        border: 1px solid $dark-grey-color;
-        border-radius: 50px;
-        left: -27px;
-      }
-  
-      &:after {
-        content: '';
-        position: absolute;
-        width: 13px;
-        height: 13px;
-        background: $pink;
-        border-radius: 50px;
-        left: -24px;
-        top: 3px;
-        display: none;
-      }
-    }
-  
-    &__gender {
-      margin: 33px 0 33px;
-    }
-  
-    &__input::placeholder {
-      @include font(13px, 16px, 300);
-      color: $dark-grey-color;
-    }
-  
-    &-subtext {
-      @include font(13px, 16px, 300);
-      color: $dark-grey-color;
-      margin: 15px 0 0;
-    }
-  
-    &__button {
-      @include font(15px, 17px, 400);
-      text-transform: uppercase;
-      color: $white;
-      background-color: $pink;
-      border: none;
-      padding: 16px 66px 16px 29px;
-      margin: 39px 0 113px;
-      position: relative;
-      display: block;
-  
-      &:before {
-        content: '';
-        background: url(../img/arrow.png);
-        position: absolute;
-        width: 17px;
-        height: 10px;
-        right: 20px;
-        top: 40%;
-      }
-    }
-  
-    &__title {
-      @include font(24px, 29px, 300);
-      text-transform: uppercase;
-    }
-  
-    &__text {
-      @include font(24px, 29px, 300);
-      max-width: 652px;
-      margin: 22px 0 0;
-    }
-  
-    &__list {
-      margin: 21px 0 0;
-    }
-  
-    &__item {
-      @include font(24px, 29px, 300);
-      margin: 0 0 16px 36px;
-      position: relative;
-  
-      &:before {
-        content: '';
-        background: url(../img/element.svg);
-        height: 16px;
-        width: 20px;
-        position: absolute;
-        left: -33px;
-        top: 25%;
-      }
+  }
+
+  &__gender {
+    margin: 33px 0 33px;
+  }
+
+  &__input::placeholder {
+    @include font(13px, 16px, 300);
+    color: $dark-grey-color;
+  }
+
+  &-subtext {
+    @include font(13px, 16px, 300);
+    color: $dark-grey-color;
+    margin: 15px 0 0;
+  }
+
+  &__button {
+    @include font(15px, 17px, 400);
+    text-transform: uppercase;
+    color: $white;
+    background-color: $pink;
+    border: none;
+    padding: 16px 66px 16px 29px;
+    margin: 39px 0 113px;
+    position: relative;
+    display: block;
+
+    &:before {
+      content: '';
+      background: url(../img/arrow.png);
+      position: absolute;
+      width: 17px;
+      height: 10px;
+      right: 20px;
+      top: 40%;
     }
   }
-  
+
+  &__title {
+    @include font(24px, 29px, 300);
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @include font(24px, 29px, 300);
+    max-width: 652px;
+    margin: 22px 0 0;
+  }
+
+  &__list {
+    margin: 21px 0 0;
+  }
+
+  &__item {
+    @include font(24px, 29px, 300);
+    margin: 0 0 16px 36px;
+    position: relative;
+
+    &:before {
+      content: '';
+      background: url(../img/element.svg);
+      height: 16px;
+      width: 20px;
+      position: absolute;
+      left: -33px;
+      top: 25%;
+    }
+  }
+}

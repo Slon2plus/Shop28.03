@@ -6,6 +6,14 @@
     @include font(30px, 36px, 400);
     margin: 97px 0 6px 0;
     align-self: center;
+
+    @include tablet {
+      margin: 130px 0 0;
+    }
+
+    @include mobile {
+      margin: 32px 0 0;
+    }
   }
 
   &__text {
@@ -18,11 +26,32 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 48px 0 0;
+
+    @include tablet {
+      margin: 75px 0 0;
+      justify-content: center;
+    }
+
+    @include mobile {
+      margin: 64px 0 0;
+    }
+
+    @include min-mob {
+      width: 100%;
+    }
   }
 
   &__item {
     width: 360px;
     margin: 0 0 30px;
+
+    @include tablet {
+      margin: 0 0 15px;
+    }
+
+    @include mobile {
+      margin: 0 0 16px;
+    }
 
     &:hover .product__overlay:before,
     &:hover .product__button {
@@ -42,6 +71,14 @@
     color: $pink;
     align-self: center;
     background: $white;
+
+    @include tablet {
+      margin: 33px 0 65px;
+    }
+
+    @include mobile {
+      margin: 41px 0 97px;
+    }
 
     &:hover,
     &:focus {

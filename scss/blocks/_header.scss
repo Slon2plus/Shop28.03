@@ -15,6 +15,10 @@
   &__logo {
     margin: 0 65px 0 0;
     align-items: center;
+
+    @include tablet {
+      margin: 0 56px 0 16px;
+    }
   }
 
   &__form {
@@ -36,6 +40,14 @@
     padding: 10px 20px;
     border: none;
     outline: 1px solid $black-color;
+
+    @include tablet {
+      padding: 9px 10px;
+    }
+
+    @include mobile {
+      display: none;
+    }
   }
 
   [type="search"]:hover,
@@ -47,7 +59,7 @@
   &__button {
     background: transparent;
     border: none;
-    margin: 0 34px 0 0;
+    margin: 0 25px 0 0;
 
     &:hover .header__icon,
     &:focus .header__icon {
@@ -57,6 +69,10 @@
 
   &__link {
     margin: 0 34px 0 0;
+
+    @include mobile {
+      display: none;
+    }
 
     &:hover .header__icon,
     &:focus .header__icon {
@@ -72,6 +88,16 @@
     }
   }
 
+  &__basket {
+    @include tablet {
+      margin: 0 16px 0;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
   &__navigation {
     content: '';
     position: absolute;
@@ -82,7 +108,7 @@
     right: 49px;
     top: 51px;
   }
-  
+
   &__title {
     @include font(14px, 17px, 700);
     color: $black-color;
